@@ -23,4 +23,7 @@ class PoemsSpider(scrapy.Spider):
         else:
             yield from respone.follow_all(
                 poems_links,callback=self.parse_poem,)
+     
+    def parse_poem(self,response):
+        return None
               
