@@ -26,4 +26,8 @@ class PoemsSpider(scrapy.Spider):
      
     def parse_poem(self,response):
         return None
+    
+    def parse_hard(self,response):
+        return "I try my best to win the game"
+       
               
